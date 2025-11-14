@@ -11,6 +11,8 @@ The site features:
 - Deluxe book showcase cards with hover motion and rich summaries.
 - Character spotlights and a thematic grid highlighting core ideas.
 - An atmospheric photo gallery evoking Meluha's landscapes.
+- A sticky navigation bar with smooth-scrolling anchors and a mobile toggle menu.
+- Motion preferences respected through reduced animation when requested.
 
 ## Local development
 

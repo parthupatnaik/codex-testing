@@ -19,6 +19,31 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__container">
+        <a class="site-nav__brand" href="#overview">Shiva Trilogy</a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+        </button>
+        <div class="site-nav__links" id="primary-navigation">
+          <a href="#overview">Overview</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#books">Books</a>
+          <a href="#characters">Characters</a>
+          <a href="#themes">Themes</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </div>
+    </nav>
+
     <header class="hero" role="banner">
       <div class="hero__aura"></div>
       <div class="hero__overlay"></div>
@@ -321,6 +346,62 @@
       const now = new Date();
       if (yearEl) {
         yearEl.textContent = now.getFullYear();
+      }
+
+      const navToggle = document.querySelector(".site-nav__toggle");
+      const navLinks = document.getElementById("primary-navigation");
+      const mobileQuery =
+        typeof window.matchMedia === "function"
+          ? window.matchMedia("(max-width: 720px)")
+          : null;
+
+      const shouldCollapse = () => {
+        if (mobileQuery) {
+          return mobileQuery.matches;
+        }
+        return window.innerWidth <= 720;
+      };
+
+      if (navToggle && navLinks) {
+        const toggleMenu = () => {
+          const expanded = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!expanded));
+          navLinks.classList.toggle("site-nav__links--open", !expanded);
+        };
+
+        navToggle.addEventListener("click", toggleMenu);
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (shouldCollapse()) {
+              navToggle.setAttribute("aria-expanded", "false");
+              navLinks.classList.remove("site-nav__links--open");
+            }
+          });
+        });
+
+        window.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+            navToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("site-nav__links--open");
+            navToggle.focus();
+          }
+        });
+
+        const handleBreakpointChange = (event) => {
+          if (!event.matches) {
+            navToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("site-nav__links--open");
+          }
+        };
+
+        if (mobileQuery) {
+          if (typeof mobileQuery.addEventListener === "function") {
+            mobileQuery.addEventListener("change", handleBreakpointChange);
+          } else if (typeof mobileQuery.addListener === "function") {
+            mobileQuery.addListener(handleBreakpointChange);
+          }
+        }
       }
     </script>
   </body>
