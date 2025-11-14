@@ -5,29 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A cinematic tribute to Amish Tripathi's Shiva Trilogy with timelines, book highlights, and themes crafted for GitHub Pages."
+      content="An atmospheric Shiva Trilogy tribute site featuring cinematic storytelling, character spotlights, and immersive visuals crafted for GitHub Pages."
     />
     <title>Shiva Trilogy — Epic of the Neelkanth</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Hind:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="hero">
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__container">
+        <a class="site-nav__brand" href="#overview">Shiva Trilogy</a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+        </button>
+        <div class="site-nav__links" id="primary-navigation">
+          <a href="#overview">Overview</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#books">Books</a>
+          <a href="#characters">Characters</a>
+          <a href="#themes">Themes</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" role="banner">
+      <div class="hero__aura"></div>
       <div class="hero__overlay"></div>
       <div class="hero__content">
-        <p class="hero__eyebrow">Amish Tripathi's mythological adventure</p>
+        <span class="hero__eyebrow">Mythic India Reimagined</span>
         <h1 class="hero__title">Shiva Trilogy</h1>
         <p class="hero__subtitle">
-          Discover the journey of Shiva as he embraces his destiny, uncovers hidden truths,
-          and reshapes the fate of empires.
+          Follow Shiva's transformation from reluctant warrior to legendary savior in Amish Tripathi's bestselling saga. Wander
+          through battles, politics, and prophecy in a world where every choice reshapes destiny.
         </p>
-        <a class="hero__cta" href="#books">Explore the saga</a>
+        <div class="hero__cta-group">
+          <a class="hero__cta hero__cta--primary" href="#books">Enter the saga</a>
+          <a class="hero__cta hero__cta--ghost" href="#gallery">View the world</a>
+        </div>
+      </div>
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <span class="hero__scroll-line"></span>
       </div>
     </header>
 
@@ -57,130 +91,190 @@
         </div>
       </section>
 
-      <section class="timeline" aria-labelledby="timeline-heading">
+      <section class="books" id="books">
         <div class="container">
-          <h2 id="timeline-heading">Journey Through the Trilogy</h2>
-          <ol class="timeline__list">
-            <li class="timeline__item">
-              <div class="timeline__dot"></div>
-              <time class="timeline__year">2010</time>
-              <div class="timeline__content">
+          <h2 class="section-title">Book Showcase</h2>
+          <div class="book-grid">
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/0/0e/The_Immortals_Of_Meluha.jpg"
+                  alt="Cover art for The Immortals of Meluha"
+                  loading="lazy"
+                />
+              </div>
+              <div class="book-card__body">
                 <h3>The Immortals of Meluha</h3>
+                <p class="book-card__meta">2010 · Birth of the Neelkanth</p>
                 <p>
-                  Shiva arrives in Meluha, discovers his identity as the prophesied Neelkanth, and takes up arms against the Chandravanshis
-                  while unraveling the mysteries of the Nagas.
+                  Arriving as a refugee, Shiva is thrust into the utopian empire of Meluha. When Somras turns his throat blue, he
+                  becomes the fated savior tasked with confronting the Chandravanshis—only to discover morality is far from
+                  absolute.
                 </p>
               </div>
-            </li>
-            <li class="timeline__item">
-              <div class="timeline__dot"></div>
-              <time class="timeline__year">2011</time>
-              <div class="timeline__content">
+            </article>
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/7/78/The_Secret_of_the_Nagas.jpg"
+                  alt="Cover art for The Secret of the Nagas"
+                  loading="lazy"
+                />
+              </div>
+              <div class="book-card__body">
                 <h3>The Secret of the Nagas</h3>
+                <p class="book-card__meta">2011 · Truth in the shadows</p>
                 <p>
-                  Shiva races to protect Sati, journeying to Branga, uncovering hidden truths about the Nagas, and confronting shocking revelations
-                  about his family's past.
+                  A Naga assassin strikes at Shiva's heart, sending him eastward to Branga. Alliances blur, a plague threatens
+                  thousands, and revelations about family redefine who stands as friend or foe.
                 </p>
               </div>
-            </li>
-            <li class="timeline__item">
-              <div class="timeline__dot"></div>
-              <time class="timeline__year">2013</time>
-              <div class="timeline__content">
+            </article>
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/e/e5/The_Oath_of_the_Vayuputras.jpg"
+                  alt="Cover art for The Oath of the Vayuputras"
+                  loading="lazy"
+                />
+              </div>
+              <div class="book-card__body">
                 <h3>The Oath of the Vayuputras</h3>
+                <p class="book-card__meta">2013 · The last stand</p>
                 <p>
-                  The final reckoning reveals Somras as the true evil. Shiva wages a devastating war to end its influence, changing the destiny of Meluha forever.
+                  The origins of Somras ignite a cataclysm. Backed by the Vayuputras and scarred by loss, Shiva risks everything
+                  to dismantle a corrupted empire and forge a future worthy of legend.
                 </p>
               </div>
-            </li>
-          </ol>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="books" id="books">
+      <section class="characters" id="characters">
         <div class="container">
-          <h2>The Books</h2>
-
-          <article class="book">
-            <div class="book__media">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/0/03/The_Immortals_of_Meluha.jpg"
-                alt="Cover art for The Immortals of Meluha"
-                loading="lazy"
-              />
-            </div>
-            <div class="book__details">
-              <h3>The Immortals of Meluha</h3>
-              <p class="book__meta">Published 2010</p>
-              <p>
-                Shiva, a fierce warrior from Tibet, is drawn into the utopian empire of Meluha. When his throat turns blue after drinking Somras,
-                he is hailed as the Neelkanth—savior of the Suryavanshi people. Torn between belief and duty, Shiva leads Meluha against the Chandravanshis
-                and their mysterious Naga allies, learning that destiny is shaped by choice.
-              </p>
-            </div>
-          </article>
-
-          <article class="book book--reverse">
-            <div class="book__media">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/7/78/The_Secret_of_the_Nagas.jpg"
-                alt="Cover art for The Secret of the Nagas"
-                loading="lazy"
-              />
-            </div>
-            <div class="book__details">
-              <h3>The Secret of the Nagas</h3>
-              <p class="book__meta">Published 2011</p>
-              <p>
-                Shiva's pursuit of a Naga assassin endangers those he loves most. His quest leads eastward to the land of Branga, where he must cure a deadly plague
-                and confront revelations about Sati's hidden past. Allies and enemies swap places as the truth behind the Nagas emerges.
-              </p>
-            </div>
-          </article>
-
-          <article class="book">
-            <div class="book__media">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/e/e5/The_Oath_of_the_Vayuputras.jpg"
-                alt="Cover art for The Oath of the Vayuputras"
-                loading="lazy"
-              />
-            </div>
-            <div class="book__details">
-              <h3>The Oath of the Vayuputras</h3>
-              <p class="book__meta">Published 2013</p>
-              <p>
-                The saga culminates with Shiva discovering the catastrophic consequences of Somras. Guided by the Vayuputras, he wages a righteous war
-                against Meluha's leadership. Personal tragedy fuels his resolve, and the destruction of the old order paves the way for legend.
-              </p>
-            </div>
-          </article>
+          <h2 class="section-title">Faces of the Legend</h2>
+          <div class="character-grid">
+            <article class="character-card">
+              <div class="character-card__image" role="presentation"></div>
+              <div class="character-card__body">
+                <h3>Shiva</h3>
+                <p>
+                  From tribal leader to mythic savior, Shiva embodies fierce loyalty and principled rebellion. His humanity makes
+                  his transformation into the Mahadev all the more powerful.
+                </p>
+              </div>
+            </article>
+            <article class="character-card">
+              <div class="character-card__image character-card__image--sati" role="presentation"></div>
+              <div class="character-card__body">
+                <h3>Sati</h3>
+                <p>
+                  Warrior princess of Meluha and Shiva's partner. Her courage, discipline, and sacrifices anchor the trilogy's
+                  emotional core and challenge every notion of honor.
+                </p>
+              </div>
+            </article>
+            <article class="character-card">
+              <div class="character-card__image character-card__image--naga" role="presentation"></div>
+              <div class="character-card__body">
+                <h3>The Nagas</h3>
+                <p>
+                  Outcast guardians with concealed identities. Their secrets illuminate the trilogy's moral grey zones and force
+                  Shiva to confront the cost of blind faith.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="themes" id="themes">
         <div class="container">
-          <h2>Enduring Themes</h2>
+          <h2 class="section-title">Enduring Themes</h2>
           <div class="themes__grid">
             <article class="theme">
               <h3>Destiny vs. Choice</h3>
               <p>
-                Shiva's rise as the Neelkanth questions whether heroes are born or made. His decisions—and their consequences—shape the myth that surrounds him.
+                The prophecy of the Neelkanth collides with Shiva's skepticism. Every decision he makes—rather than fate alone—
+                defines the legend that survives him.
+              </p>
+            </article>
+            <article class="theme">
+              <h3>Science as Divinity</h3>
+              <p>
+                Somras, medicine, and engineered cities blur the lines between magic and technology, examining how knowledge can
+                both heal and corrupt societies.
               </p>
             </article>
             <article class="theme">
               <h3>Balance of Good and Evil</h3>
               <p>
-                The trilogy frames good and evil as situational, urging readers to examine morality through the lens of balance, context, and responsibility.
+                The trilogy reframes good and evil as perspectives shaped by need, encouraging empathy, accountability, and the
+                courage to change course.
               </p>
             </article>
             <article class="theme">
-              <h3>Legacy and Myth-Making</h3>
+              <h3>Legacy &amp; Myth-Making</h3>
               <p>
-                Each victory and sacrifice is immortalized by those who remain, revealing how legends are woven from lived experiences and collective memory.
+                Chronicles, songs, and survivors ensure Shiva's story endures—reminding us that legends are woven from imperfect
+                people and impossible choices.
               </p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="section-title">Visual Echoes</h2>
+          <p class="gallery__intro">
+            Lush riverbanks, sacred mountains, and intricate citadels form the spiritual backdrop to Shiva's odyssey. Immerse
+            yourself in atmospheric glimpses of the trilogy's world.
+          </p>
+          <div class="gallery__grid">
+            <figure class="gallery__item gallery__item--one">
+              <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                alt="Snow-capped mountains reminiscent of Mount Kailash"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item gallery__item--two">
+              <img
+                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                alt="Sunset over a calm river similar to the Saraswati"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item gallery__item--three">
+              <img
+                src="https://images.unsplash.com/photo-1578925770262-6c1cd472e8ee?auto=format&fit=crop&w=900&q=80"
+                alt="Ancient temple corridor with warm lighting"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item gallery__item--four">
+              <img
+                src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?auto=format&fit=crop&w=900&q=80"
+                alt="Intricate carvings evoking Meluhan architecture"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="callout" id="callout">
+        <div class="container callout__content">
+          <div class="callout__text">
+            <h2 class="section-title">Carry the Fire Forward</h2>
+            <p>
+              Revisit the trilogy, share it with fellow seekers, or explore Amish Tripathi's expanding universe. The legend of the
+              Neelkanth continues wherever readers believe in balance and bravery.
+            </p>
+          </div>
+          <a class="callout__button" href="#books">Revisit the books</a>
         </div>
       </section>
     </main>
@@ -190,6 +284,7 @@
         <p>&copy; <span id="current-year"></span> Shiva Trilogy Tribute. Crafted for GitHub Pages.</p>
         <nav aria-label="Footer navigation">
           <a href="#overview">Overview</a>
+          <a href="#timeline">Timeline</a>
           <a href="#books">Books</a>
           <a href="#themes">Themes</a>
         </nav>
@@ -201,6 +296,62 @@
       const now = new Date();
       if (yearEl) {
         yearEl.textContent = now.getFullYear();
+      }
+
+      const navToggle = document.querySelector(".site-nav__toggle");
+      const navLinks = document.getElementById("primary-navigation");
+      const mobileQuery =
+        typeof window.matchMedia === "function"
+          ? window.matchMedia("(max-width: 720px)")
+          : null;
+
+      const shouldCollapse = () => {
+        if (mobileQuery) {
+          return mobileQuery.matches;
+        }
+        return window.innerWidth <= 720;
+      };
+
+      if (navToggle && navLinks) {
+        const toggleMenu = () => {
+          const expanded = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!expanded));
+          navLinks.classList.toggle("site-nav__links--open", !expanded);
+        };
+
+        navToggle.addEventListener("click", toggleMenu);
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (shouldCollapse()) {
+              navToggle.setAttribute("aria-expanded", "false");
+              navLinks.classList.remove("site-nav__links--open");
+            }
+          });
+        });
+
+        window.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+            navToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("site-nav__links--open");
+            navToggle.focus();
+          }
+        });
+
+        const handleBreakpointChange = (event) => {
+          if (!event.matches) {
+            navToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("site-nav__links--open");
+          }
+        };
+
+        if (mobileQuery) {
+          if (typeof mobileQuery.addEventListener === "function") {
+            mobileQuery.addEventListener("change", handleBreakpointChange);
+          } else if (typeof mobileQuery.addListener === "function") {
+            mobileQuery.addListener(handleBreakpointChange);
+          }
+        }
       }
     </script>
   </body>

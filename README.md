@@ -6,10 +6,13 @@ This repository hosts a single-page tribute site for Amish Tripathi's **Shiva Tr
 
 The site features:
 
-- A cinematic hero section introducing the trilogy.
-- A timeline that outlines the publication journey of each book.
-- Detailed spotlights for all three novels.
-- A thematic grid that highlights recurring ideas from the saga.
+- A cinematic hero with layered aurora effects and guided call-to-actions.
+- A vertical destiny timeline charting each novel's turning points.
+- Deluxe book showcase cards with hover motion and rich summaries.
+- Character spotlights and a thematic grid highlighting core ideas.
+- An atmospheric photo gallery evoking Meluha's landscapes.
+- A sticky navigation bar with smooth-scrolling anchors and a mobile toggle menu.
+- Motion preferences respected through reduced animation when requested.
 
 ## Local development
 
@@ -37,5 +40,3 @@ Replace `<your-github-username>` with the owner of the repository and `<this-rep
 
 Enjoy exploring the legend of the Neelkanth!
 
-
-Deployment trigger update
