@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Hind:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -45,26 +45,18 @@
     </nav>
 
     <header class="hero" role="banner">
-      <div class="hero__inner">
-        <div class="hero__content">
-          <span class="hero__eyebrow">Mythic India Reimagined</span>
-          <h1 class="hero__title">Shiva Trilogy</h1>
-          <p class="hero__subtitle">
-            Follow Shiva's transformation from reluctant warrior to legendary savior in Amish Tripathi's bestselling saga.
-            Wander through battles, politics, and prophecy in a world where every choice reshapes destiny.
-          </p>
-          <div class="hero__cta-group">
-            <a class="hero__cta hero__cta--primary" href="#books">Enter the saga</a>
-            <a class="hero__cta hero__cta--ghost" href="#gallery">Discover the world</a>
-          </div>
-        </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__orb hero__orb--one"></div>
-          <div class="hero__orb hero__orb--two"></div>
-          <div class="hero__card">
-            <span class="hero__card-label">The Neelkanth</span>
-            <p class="hero__card-text">A mortal chosen to balance light and shadow.</p>
-          </div>
+      <div class="hero__aura"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__eyebrow">Mythic India Reimagined</span>
+        <h1 class="hero__title">Shiva Trilogy</h1>
+        <p class="hero__subtitle">
+          Follow Shiva's transformation from reluctant warrior to legendary savior in Amish Tripathi's bestselling saga. Wander
+          through battles, politics, and prophecy in a world where every choice reshapes destiny.
+        </p>
+        <div class="hero__cta-group">
+          <a class="hero__cta hero__cta--primary" href="#books">Enter the saga</a>
+          <a class="hero__cta hero__cta--ghost" href="#gallery">View the world</a>
         </div>
       </div>
       <div class="hero__scroll-cue" aria-hidden="true">
@@ -74,9 +66,9 @@
     </header>
 
     <main id="main-content">
-      <section class="section overview" id="overview">
+      <section class="overview" id="overview">
         <div class="container">
-          <h2 class="section__title">The Epic at a Glance</h2>
+          <h2>The Epic at a Glance</h2>
           <p>
             The <strong>Shiva Trilogy</strong> reimagines the revered deity as a mortal hero whose choices forge legends.
             Across three sweeping novels, Shiva is drawn from the icy Tibetan plains into the heart of Meluha,
@@ -99,41 +91,15 @@
         </div>
       </section>
 
-      <section class="section timeline" id="timeline">
+      <section class="books" id="books">
         <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Moments that Define the Legend</h2>
-            <p class="section__lede">A swift journey through the trilogy’s pivotal turning points.</p>
-          </div>
-          <ol class="timeline__list">
-            <li>
-              <span class="timeline__tag">Book I</span>
-              Shiva arrives in Meluha and drinks Somras, revealing the blue throat of prophecy.
-            </li>
-            <li>
-              <span class="timeline__tag">Book II</span>
-              An assassin’s strike unravels a conspiracy, guiding Shiva to the hidden Naga capital.
-            </li>
-            <li>
-              <span class="timeline__tag">Book III</span>
-              The source of evil is exposed, forcing a choice that reshapes the moral order of India.
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section books" id="books">
-        <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Book Showcase</h2>
-            <p class="section__lede">Three movements. One legend carried through time.</p>
-          </div>
+          <h2 class="section-title">Book Showcase</h2>
           <div class="book-grid">
             <article class="book-card">
-              <div class="book-card__cover" aria-hidden="true">
+              <div class="book-card__cover">
                 <img
-                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
-                  alt="Diffuse golden light across sculpted stone"
+                  src="https://upload.wikimedia.org/wikipedia/en/0/0e/The_Immortals_Of_Meluha.jpg"
+                  alt="Cover art for The Immortals of Meluha"
                   loading="lazy"
                 />
               </div>
@@ -148,36 +114,36 @@
               </div>
             </article>
             <article class="book-card">
-              <div class="book-card__cover" aria-hidden="true">
+              <div class="book-card__cover">
                 <img
-                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
-                  alt="Twilight mountains with icy peaks"
+                  src="https://upload.wikimedia.org/wikipedia/en/7/78/The_Secret_of_the_Nagas.jpg"
+                  alt="Cover art for The Secret of the Nagas"
                   loading="lazy"
                 />
               </div>
               <div class="book-card__body">
                 <h3>The Secret of the Nagas</h3>
-                <p class="book-card__meta">2011 · Shadows of the Serpent</p>
+                <p class="book-card__meta">2011 · Truth in the shadows</p>
                 <p>
-                  Shiva journeys east to confront the mysterious Nagas, only to uncover buried truths about his allies and
-                  enemies. The war for balance expands beyond empires into the realm of the divine.
+                  A Naga assassin strikes at Shiva's heart, sending him eastward to Branga. Alliances blur, a plague threatens
+                  thousands, and revelations about family redefine who stands as friend or foe.
                 </p>
               </div>
             </article>
             <article class="book-card">
-              <div class="book-card__cover" aria-hidden="true">
+              <div class="book-card__cover">
                 <img
-                  src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
-                  alt="Sun-drenched river valley"
+                  src="https://upload.wikimedia.org/wikipedia/en/e/e5/The_Oath_of_the_Vayuputras.jpg"
+                  alt="Cover art for The Oath of the Vayuputras"
                   loading="lazy"
                 />
               </div>
               <div class="book-card__body">
                 <h3>The Oath of the Vayuputras</h3>
-                <p class="book-card__meta">2013 · The Final Reckoning</p>
+                <p class="book-card__meta">2013 · The last stand</p>
                 <p>
-                  The concluding chapter leads Shiva to face the source of evil itself. Sacrifice, loyalty, and destiny collide as
-                  the fate of humanity balances on a single choice.
+                  The origins of Somras ignite a cataclysm. Backed by the Vayuputras and scarred by loss, Shiva risks everything
+                  to dismantle a corrupted empire and forge a future worthy of legend.
                 </p>
               </div>
             </article>
@@ -185,37 +151,37 @@
         </div>
       </section>
 
-      <section class="section characters" id="characters">
+      <section class="characters" id="characters">
         <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Key Allies &amp; Adversaries</h2>
-            <p class="section__lede">Nuanced companions who shape the Neelkanth's path.</p>
-          </div>
+          <h2 class="section-title">Faces of the Legend</h2>
           <div class="character-grid">
             <article class="character-card">
+              <div class="character-card__image" role="presentation"></div>
+              <div class="character-card__body">
+                <h3>Shiva</h3>
+                <p>
+                  From tribal leader to mythic savior, Shiva embodies fierce loyalty and principled rebellion. His humanity makes
+                  his transformation into the Mahadev all the more powerful.
+                </p>
+              </div>
+            </article>
+            <article class="character-card">
+              <div class="character-card__image character-card__image--sati" role="presentation"></div>
               <div class="character-card__body">
                 <h3>Sati</h3>
                 <p>
-                  Warrior princess of Meluha and Shiva's partner. Her resolve, compassion, and unflinching honour ground the
-                  trilogy's emotional core.
+                  Warrior princess of Meluha and Shiva's partner. Her courage, discipline, and sacrifices anchor the trilogy's
+                  emotional core and challenge every notion of honor.
                 </p>
               </div>
             </article>
             <article class="character-card">
-              <div class="character-card__body">
-                <h3>Parvateshwar</h3>
-                <p>
-                  The general of the Meluhan army whose loyalty is earned, not given. His evolving allegiance mirrors the
-                  trilogy's exploration of duty and truth.
-                </p>
-              </div>
-            </article>
-            <article class="character-card">
+              <div class="character-card__image character-card__image--naga" role="presentation"></div>
               <div class="character-card__body">
                 <h3>The Nagas</h3>
                 <p>
-                  Outcast guardians with concealed identities. Their secrets illuminate the moral grey zones that force Shiva to
-                  question blind faith.
+                  Outcast guardians with concealed identities. Their secrets illuminate the trilogy's moral grey zones and force
+                  Shiva to confront the cost of blind faith.
                 </p>
               </div>
             </article>
@@ -223,35 +189,32 @@
         </div>
       </section>
 
-      <section class="section themes" id="themes">
+      <section class="themes" id="themes">
         <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Themes that Resonate</h2>
-            <p class="section__lede">Why this story endures across generations.</p>
-          </div>
-          <div class="themes-grid">
-            <article class="theme-card">
-              <h3>Dharma &amp; Choice</h3>
+          <h2 class="section-title">Enduring Themes</h2>
+          <div class="themes__grid">
+            <article class="theme">
+              <h3>Destiny vs. Choice</h3>
               <p>
                 The prophecy of the Neelkanth collides with Shiva's skepticism. Every decision he makes—rather than fate alone—
                 defines the legend that survives him.
               </p>
             </article>
-            <article class="theme-card">
+            <article class="theme">
               <h3>Science as Divinity</h3>
               <p>
-                Somras, medicine, and engineered cities blur the lines between magic and technology, showing how knowledge can
+                Somras, medicine, and engineered cities blur the lines between magic and technology, examining how knowledge can
                 both heal and corrupt societies.
               </p>
             </article>
-            <article class="theme-card">
+            <article class="theme">
               <h3>Balance of Good and Evil</h3>
               <p>
                 The trilogy reframes good and evil as perspectives shaped by need, encouraging empathy, accountability, and the
                 courage to change course.
               </p>
             </article>
-            <article class="theme-card">
+            <article class="theme">
               <h3>Legacy &amp; Myth-Making</h3>
               <p>
                 Chronicles, songs, and survivors ensure Shiva's story endures—reminding us that legends are woven from imperfect
@@ -262,40 +225,39 @@
         </div>
       </section>
 
-      <section class="section gallery" id="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Atmospheric Gallery</h2>
-            <p class="section__lede">
-              Minimal compositions and timeless palettes inspired by the trilogy’s elemental worlds.
-            </p>
-          </div>
+          <h2 class="section-title">Visual Echoes</h2>
+          <p class="gallery__intro">
+            Lush riverbanks, sacred mountains, and intricate citadels form the spiritual backdrop to Shiva's odyssey. Immerse
+            yourself in atmospheric glimpses of the trilogy's world.
+          </p>
           <div class="gallery__grid">
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item--one">
               <img
-                src="https://images.unsplash.com/photo-1474433188271-d3f339f41911?auto=format&fit=crop&w=1200&q=80"
-                alt="Soft sunrise bathing Himalayan peaks"
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                alt="Snow-capped mountains reminiscent of Mount Kailash"
                 loading="lazy"
               />
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item--two">
               <img
-                src="https://images.unsplash.com/photo-1549888834-3ec93abae044?auto=format&fit=crop&w=1200&q=80"
-                alt="Misty river bending through emerald plains"
+                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                alt="Sunset over a calm river similar to the Saraswati"
                 loading="lazy"
               />
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item--three">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
-                alt="Starlit sky above an ancient temple silhouette"
+                src="https://images.unsplash.com/photo-1578925770262-6c1cd472e8ee?auto=format&fit=crop&w=900&q=80"
+                alt="Ancient temple corridor with warm lighting"
                 loading="lazy"
               />
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item--four">
               <img
-                src="https://images.unsplash.com/photo-1558443957-d056622df610?auto=format&fit=crop&w=1200&q=80"
-                alt="Intricate stone relief with diffused lighting"
+                src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?auto=format&fit=crop&w=900&q=80"
+                alt="Intricate carvings evoking Meluhan architecture"
                 loading="lazy"
               />
             </figure>
@@ -303,10 +265,10 @@
         </div>
       </section>
 
-      <section class="section callout" id="callout">
+      <section class="callout" id="callout">
         <div class="container callout__content">
           <div class="callout__text">
-            <h2 class="section__title">Carry the Fire Forward</h2>
+            <h2 class="section-title">Carry the Fire Forward</h2>
             <p>
               Revisit the trilogy, share it with fellow seekers, or explore Amish Tripathi's expanding universe. The legend of the
               Neelkanth continues wherever readers believe in balance and bravery.
